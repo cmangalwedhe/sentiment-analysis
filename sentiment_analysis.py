@@ -5,9 +5,7 @@ import numpy as np
 import requests
 from bs4 import BeautifulSoup
 import re
-from flask import Flask, render_template, request
 
-flask = Flask(__name__)
 
 tokenizer = AutoTokenizer.from_pretrained('nlptown/bert-base-multilingual-uncased-sentiment')
 model = AutoModelForSequenceClassification.from_pretrained('nlptown/bert-base-multilingual-uncased-sentiment')
@@ -18,29 +16,26 @@ def get_sentiment_score(review: str) -> int:
     result = model(tokens)
     return int(torch.argmax(result.logits)) + 1
 
-link = 'https://www.yelp.com'
 
+def initiate(link):
+    yelp_link = link
 
-@flask.route('/enter_link', methods=["GET", "POST"])
-def enter_link():
-    global link
-
-    if request.method == "POST":
-        link = request.form['link']
-        return "Thank you, please standby!"
-    else:
-        return render_template('form.html')
-
-if __name__ == "__main__":
-    flask.run(debug=True)
-
-    r = requests.get(link)
+    r = requests.get(yelp_link)
     soup = BeautifulSoup(r.text, 'html.parser')
     regex = re.compile('.*comment.*')
     results = soup.find_all('p', {'class': regex})
+    span_regex = re.compile('\\s*css-chan6m\\s*')
+    page_numbers = soup.find_all('span', {'class': span_regex})
+    total_pages = -1
+
+    for num in page_numbers:
+        if re.match("\\d+ of \\d+", num.text):
+            total_pages = num.text
+
+    print(int((total_pages.split(" ")[-1])))
     reviews = [result.text for result in results]
 
     df = pd.DataFrame(np.array(reviews), columns=['review'])
 
     df['sentiment'] = df['review'].apply(lambda x: get_sentiment_score((x[:512])))
-    print(df)
+    return df
