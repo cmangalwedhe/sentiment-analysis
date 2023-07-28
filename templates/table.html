@@ -3,415 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <title>Results</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<table border="1" class="dataframe">
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Home Page</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/get_yelp_link">Enter Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/show_sentiment">Show Comments</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/display_graph">Show Graphs</a>
+        </li>
+    </ul>
+</body>
+<table border="1" class="dataframe table table-stripped">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>review</th>
-      <th>sentiment</th>
+    <tr style="text-align: left;">
+      <th>Review</th>
+      <th>Sentiment</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>Several of my family members have a gluten sensitivity, if you're like us then don't go to this location. Go to the Fairfield location. They are excellent when it comes to gluten. This location is good if you don't have any dietary restrictions.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>BURNT!! Just spent $30 on 2 cauliflower pizzas. For $3.30 MORE for each one u 2 can enjoy (NOT) an extra crispy, extra crunchy, "fall on the floor when you bite it" charred pizza. Extremely disappointed.We usually go 2 Towne Lake location but were STARVING! Big mistake coming here. They should have offered 2 replace it when they realized they left it in to long but guess they decided 2 see if we would complain. Yup, I'll complain- where it does the most good...publicly. Not coming to this location anymore. remember, u have Crust Pizza opening ard the area</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>New Year's Day and not only were they open today but the 2 employees working were very personable, friendly and helpful. E will definitely be back to this location again. Plus the restaurant was very clean.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>Avoid this location. Last time we visited shortly after open (about 11:15a), staff had us stand there for 15-20 min while they worked on online orders. We were the only people in line.. food was okay. Yesterday, we also arrived early, very few In restaurant, were helped promptly but--wow, the food prep was awful. Pizzas were the size of small tortillas and when I asked about that was told they are just thick/-um, no. See pic. We' were overcharged and they gave my husband's pizza to another customer (which we didn't discover until the wait had been quite long). We got the $ back for that (and corrected the overcharge) and he did not end up eating.  No offer to comp a pizza &amp; remake.  Outdoor seating was filthy and had clearly not been cleaned since yesterday at best. Retrain &amp; do some quality control here Mod. Everyone else avoid until it improves.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>MOD Pizza has become my go to pizza spot every week. You cannot top the idea of customizing your pizza for a standard cost. I usually go with the mod size Which is an 11 inch size pizza with cauliflower crust. I top it off with a lot of cheese and a lot of vegetables, specifically garlic mushrooms and jalapeños. They have a menu with preselected types of pizza But I find customizing my pizza more rewarding. As you can tell from the pictures, the toppings are pretty stacked.Mod pizza also has a reward program where 150 points will give you a free pizza, and you are earn one point by spending one dollar.</td>
       <td>4</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>Horrible customer service. Very slow. When we walked in we were not greeted. Someone finally walked up and said, "what would you like". She kept acting as if she couldn't hear us. Once we placed our order she stared whispering to her coworkers and we could tell she was talking about us. Another co-worker was having sidebar with her about empty all the trashes and taking them directly to the dumpster. I'm only writing this review because this is the second time I've had bad service here. I would also like to note that every ingredient was packed on. Even when I asked for light jalapeños. I literally got about 15 jalapeños on a mini. Waste of produce. Needs customer service training and quality control. Never coming back to this location again.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>We LOVE MOD, and we come every Friday!  But, not sure what happened!  We started coming to this one because the Fairfield location closed for awhile.  When we first started coming here it was awesome!  Service was THE best out of any of the MODS in Cypress.  Fast forward to tonight (and last week, and the week before).  These poor kids are being forced to work and they hate it!  They don't speak up, they get pissy if you ask for anything extra and the girl at the register, she only knows how to nod, she apparently can't speak!  So... off to another one next week we go!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>Absolutely horrible service. Couldn't get help and when we finally did the guy was rude. They never called out our names for the pizza when it was ready. Stood for over 5 minutes trying to get the finishing glaze on the pizza I ordered to watch a guy sneeze all on the pizzas in the oven and then grab more food without washing his hands. Absolutely disgusting. I won't be back</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>I love this place because it's affordable and has unlimited toppings all for one price! you can switch it up and even do half and half if you like with no extra charges! The pizza is super good and I like that it is thin crust. 10/10 recommend!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>Great place to eat pizza and customize your own there! Now w/ the pandemic going on the employees the take safety measures very serious and made changes on silverware and asking for parmesan and red pepper by having to ask for any of these items instead of having those displayed by the drink station.Food wise is good although you can get full pretty easily from getting a MOD size pizza and a drink. Also something fun about their drink station is that you can actually make your own drinks too by mixing two together! I tried making an Arnold Palmer by mixing their sweet tea and lemonade together and it turned out to be one of the best Arnold Palmers I made there! Hopefully I can come back here to eat more pizza eventually! :)</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>10</th>
       <td>Can I give 0 stars?  If I had known what the inside of the "restaurant" looked like before I ordered I would have turned around and left. Dirty is being too nice.  I had to ask someone to clean a table for us.  He literally wiped everything on to the floor. This was a Tuesday evening before the dinner rush.    Out of 15(est.) tables, All were sitting empty and dirty.   The frozen pizza from the grocery store is better priced and better tasting.   The salad was wilted and obviously had been sitting out all day.We ordered 2 mini pepperoni pizzas, 2 drinks and an order of breadsticks. I'm still pissed I managed to spend 26.00.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>This is my go-to pizza place. So many toppings to choose from, it makes my head spin! No matter what you're in the mood for, there's a pizza for that! Today I tried one of their menu pizzas, the Calexico. The perfect blend of flavor and spice. Highly recommend for the days you're too lazy to design your own pizza.</td>
+      <td>Several of my family members have a gluten sensitivity, if you're like us then don't go to this location. Go to the Fairfield location. They are excellent when it comes to gluten. This location is good if you don't have any dietary restrictions.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>12</th>
-      <td>Did all the regular staff walk out? We come here every Friday night but tonight was the worst. Not one person we recognized and it was an absolute disorganized mess. Absolutely ridiculous.</td>
+      <td>BURNT!! Just spent $30 on 2 cauliflower pizzas. For $3.30 MORE for each one u 2 can enjoy (NOT) an extra crispy, extra crunchy, "fall on the floor when you bite it" charred pizza. Extremely disappointed.We usually go 2 Towne Lake location but were STARVING! Big mistake coming here. They should have offered 2 replace it when they realized they left it in to long but guess they decided 2 see if we would complain. Yup, I'll complain- where it does the most good...publicly. Not coming to this location anymore. remember, u have Crust Pizza opening ard the area</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>13</th>
-      <td>walked in to pick up my online order, it was set to be ready at 5:25pm, i go to the pick up counter and the lady ignores my boyfriend and i until we voice our presence, she doesn't ask for our order name until we tell her we're here to pick up for our name. i also ordered a 24oz cup but receive an 8oz cup, we go back to let her know she gave us the wrong cup size and she says they had ran out but i later see several customers walk out with full size 24oz cups. the food was good but i was also missing my pepperoni so that sucked.1star because the food tastes good and was on ready on time.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>This place is ALWAYS awesome. The pizza is amazing but my favorite part is the fun staff who go out of their way to help me every time. I've been in bad moods - they don't care - they still treat me well and I leave happier. I have a bad shoulder, they carry things to my car. Tonight I had too many separate orders to try to figure out each pizza per station so Javier let me do one pizza at a time. Great pizza. Great staff. Great experiences. 5 stars every time.</td>
+      <td>New Year's Day and not only were they open today but the 2 employees working were very personable, friendly and helpful. E will definitely be back to this location again. Plus the restaurant was very clean.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>ooof I guess I had gotten really lucky when I had ordered two regular mod pizzas for $21, went inside to pick up and they gave two free extra mini pizzas with some interesting combinations. Probably the customers didn't like what they had ordered or the workers were just having some fun lol. But there was one that looked like a Buffalo chicken pizza with chopped serranos and it was pleasingly good</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>So the manager on shift at this time today (didn't get her name but I should have), along with the staff were extremely accommodating. This is also one of the nicest MOD establishments i've been into very clean and very efficient. The pizza was great and the staff was very friendly. Short story: waiting in line for pizza I was acting like a buffoon and my girlfriend got embarrassed for me for what I was doing and I thought I had ruined her day. Shortly after we sit down after we pay they call her name and already in fear that I ruined her evening she comes back with a cheese-less pizza so I point it out and she was so enveloped in her own feelings she didn't even notice. Feeling like I had to do at least one thing right I went and took the pizza back to the line and placed it in front of the line staff and asked them what this was. The gentleman at the cash register at the time was shocked and politely told me he'd remake it for free. He was very patient with me while I was visibly distressed (more so about my own mistakes than anything) and later on after the new pizza came out I went to ask for more ranch and pesto and the manager handed me two free pizza vouchers for her mistake which she apologized for. To all the staff at this location, you are all amazing at your jobs and it was simply one mistake. Again, I was more stressed about my own shortcomings as a good boyfriend in that moment and I wanna thank y'all for being polite and patient with me in that brief moment. Thank you all.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Cheap and Delicious, with Unlimited toppings.When i am on the run and craving pizza, I go here.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>The pizza are great but some of the staff is not in a good mood and it's noticeable no smiles two of the young lady's were very nice they had bandanas on the rest had baseball caps on it seem as though i was bothering them.   The pizza is amazing</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Okay....I'm not much of a pizza eater, however this place....AMAZING!!! You get the choose what is put onto your pizza and they bake it for you right then.Plus, the service is pretty decent too.We will for sure be coming back!</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>I really enjoyed my pizza! The staff are awesome and the music made me want to get up and dance! We'll be back next time we're in the area!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Loving the new Mod Pizza in cypress! It's right off of 290 and spring cypress- in the same complex as Cinemark. The inside is so spacious and accommodating for large groups. I walked in and was instantly impressed. The service was great, and so quick! My coworkers and I took some pizzas to go, and the employees were so amazing to make sure we had everything we needed before we left. Can't wait to come back and dine in.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Came to get some badass pizza and wasn't disappointed! Our pizzas were super fresh, super delicious, and the staff is super friendly. 10/10 would eat here again!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Go here if you want to wait an hour for a small pizza. I ordered for pick up because the line is always wrapped around the store, should've just ordered in store all The customers that came in after me got theirs before me. Should've just gone to the Fairfield location. Don't promise a pick up time if you can't even meet your own expectations.</td>
+      <td>Avoid this location. Last time we visited shortly after open (about 11:15a), staff had us stand there for 15-20 min while they worked on online orders. We were the only people in line.. food was okay. Yesterday, we also arrived early, very few In restaurant, were helped promptly but--wow, the food prep was awful. Pizzas were the size of small tortillas and when I asked about that was told they are just thick/-um, no. See pic. We' were overcharged and they gave my husband's pizza to another customer (which we didn't discover until the wait had been quite long). We got the $ back for that (and corrected the overcharge) and he did not end up eating.  No offer to comp a pizza &amp; remake.  Outdoor seating was filthy and had clearly not been cleaned since yesterday at best. Retrain &amp; do some quality control here Mod. Everyone else avoid until it improves.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>24</th>
-      <td>Walked by MOD Pizza and decided to go in. So glad we did. The pizza is phenomenal, but the staff is even better!! The staff was very welcoming and accommodating, was happy to add extra extra toppings for me and made suggestions that put my pizza over the top in deliciousness. Thank you!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>I walked in and the staff greeted me with smiles and enthusiasm. London was so sweet breaking everything down and making sure that we got what we wanted. By far the best MOD location I've been to!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Had a wonderful and delicious pizza, but the manager was yelling at customers and at one point mentioned "you have balls to come here." Me and my family were sitting in the corner near the Pac-Man arcade machines and we clearly heard her screaming. She was a smaller individual with many colors in her hair. She had said she was the manager, but later on, she was screaming at a different customer about how she didn't say something. I couldn't hear what the customer said, but the manager had laughed at the customer and then said "I didn't laugh" being an obvious liar, so who knows if she was actually a manager. If she isn't, he manager should be spoken to, but if she is a manager, then I feel bad for her staff. Again, we were behind the wall, and still heard her screaming at customer.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>I ate here last month or so on a Sunday. Line almost out the door. The manager there was really great with greeting the customers AND hyping up her team to keep it moving. I know it's pizza but it definitely tastes better when the people actually feel like being at work. I'm not sure who the manager was, but she did really well with her team motivation! There was a never-ending like of customers, but the place still looked clean enough to dine in.</td>
+      <td>MOD Pizza has become my go to pizza spot every week. You cannot top the idea of customizing your pizza for a standard cost. I usually go with the mod size Which is an 11 inch size pizza with cauliflower crust. I top it off with a lot of cheese and a lot of vegetables, specifically garlic mushrooms and jalapeños. They have a menu with preselected types of pizza But I find customizing my pizza more rewarding. As you can tell from the pictures, the toppings are pretty stacked.Mod pizza also has a reward program where 150 points will give you a free pizza, and you are earn one point by spending one dollar.</td>
       <td>4</td>
     </tr>
     <tr>
-      <th>28</th>
-      <td>I LOVE this Mod! As usual (just like other MODs) the employees are friendly and smiling. Food is delicious and restaurant is super clean. I personally like the layout of this location better than most- it is very spacious!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Yummy pizza! I have gotten a pepperoni pizza twice now and it is my favorite! You can watch them cook it in the large open oven they have right next to the order line. It is very similar to Subway as you tell them what you want on your pizza and watch them put it together. I have ordered online to pick up and both times they have been ready when promised. There is plenty of seating and parking. The first time I picked up I wasn't greeted even though I stood next to the register for awhile. I realized I needed to pick up at another place so I walked over and after a little longer standing there and not being greeted I finally was and got my pizza. The second trip was much better and the guy taking the pizzas out of the oven was very nice and offered me a drink while I waited (I was early). He apologized for the wait and called me right away when it came out of the oven.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>This MOD is poorly managed. Figure out how to actually assist your customers and stop hiring pot heads that clearly don't even know how to wipe their own ass. Will not be coming back to this location and will be finding a way to get the management of this location fired cause wow they suck...</td>
+      <td>Horrible customer service. Very slow. When we walked in we were not greeted. Someone finally walked up and said, "what would you like". She kept acting as if she couldn't hear us. Once we placed our order she stared whispering to her coworkers and we could tell she was talking about us. Another co-worker was having sidebar with her about empty all the trashes and taking them directly to the dumpster. I'm only writing this review because this is the second time I've had bad service here. I would also like to note that every ingredient was packed on. Even when I asked for light jalapeños. I literally got about 15 jalapeños on a mini. Waste of produce. Needs customer service training and quality control. Never coming back to this location again.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>31</th>
-      <td>Orders online during busy lunch time and came in to pick up and eat some and take the rest to go. I arrived early, the pizza was made to perfection - no issues. Love this pizza!</td>
+      <td>We LOVE MOD, and we come every Friday!  But, not sure what happened!  We started coming to this one because the Fairfield location closed for awhile.  When we first started coming here it was awesome!  Service was THE best out of any of the MODS in Cypress.  Fast forward to tonight (and last week, and the week before).  These poor kids are being forced to work and they hate it!  They don't speak up, they get pissy if you ask for anything extra and the girl at the register, she only knows how to nod, she apparently can't speak!  So... off to another one next week we go!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>32</th>
-      <td>I don't usually go to MODs because I prefer Blaze pizza, but since we were nearby, we stopped by due to my pregnancy cravings. To my surprise, this location has really good customer service!! I was so impressed! The guy that took my order, I think his name was David, was super friendly and was really invested in my pregnancy as well. No other places I've gone to had people ask me how I'm feeling and what not. He made it so easy for me to pick what I wanted and also to ensure that I  pick just the right amount of toppings without making it a soggy pizza. The pizza came out crispy and so delicious! My cravings were definitely satisfied. I'll make sure to come back to MODs in the future but only this location.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Came here for a late lunch. No rush and the service was awesome. Friendly and nice staff. The pizza was so good. We put too much toppings, all our favorite.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>MOD pizza is the best pizza around! My favorite is all the fresh vegetables and different meats. My family loves dinning in and getting take out. You can order online.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Love MOD Pizza so fresh and fast. Great having the option of a salad as well. Can't beat the blackberry lemonade fantastic! So many choices to choose from. When it 1st opened in Cypress I found the service horrible with bad attitudes behind the counter. I complained to management and to my delight they got the "mess" cleaned up. I've been back many times and have had pleasant service, good pizza and you meet the nicest people.Service goes very quickly. When my Grandkids came for a visit they were blown away. They loved ordering individual pizzas and loved the fresh taste.The reason I gave it 4 and not 5 stars is I think they need to chop some of the ingredients smaller to make it easier to eat such as onions and mushrooms. With it being that size when you bite into it that whole piece comes with the bite. It farther have onion, mushroom or whatever on most of my bites.But love the pizza.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Best pizza place with the best service ever.  My daughter loves that they have mini pizzas just the right size for her.  The staff is always friendly to me and the lady who took our order made it FUN for my daughter.  I also appreciate that they were very accommodating to me when I asked to eat at a table outside after the rain and even wiped down the table just for me.  Amazing service.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>This is such a fun pizza eatery. It reminds me of a  Subway. Pick your base pizza and add all of those fresh ingredients to your liking! When the house is packed up, don't worry, the orders fly in and out in no time. It was my first time visiting this particular location. This joint occupies the space where a previous restaurant was. Parking is ample. They have a nice little outdoor seating patio with umbrellas. Indoors, it's pretty loud, so if you don't have anything to say on your first date, this is a really fun place to go to!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>I was really disappointed in my food. my mother and I ordered two pizzas. The pineapple looked and tasted old and the sauce tasted so bad. Not to mention that every time I get a pizza there's barley any cheese on it.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>Great options just need to know what you like and pick it. I was a little overwhelmed because I thought it was a regular pizza place place and had no idea what to put on my pizza. I picked a basic one and it was grate! I might go crazy with the toppings next time since they don't charge extra for them.</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>This is the worst MOD I have ever been to. Everytime we come here the employees are in such a rush that they are throwing pizzas on top of one another and they never wait to hear our entire order. If we order something in one section they are already throwing it down. This rush is a problem for gluten free crusts because they throw the gluten free pizza on the regular crust. The employees are rude and impatient and this is the last time I'll be coming here.</td>
+      <td>Absolutely horrible service. Couldn't get help and when we finally did the guy was rude. They never called out our names for the pizza when it was ready. Stood for over 5 minutes trying to get the finishing glaze on the pizza I ordered to watch a guy sneeze all on the pizzas in the oven and then grab more food without washing his hands. Absolutely disgusting. I won't be back</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>41</th>
-      <td>My husband and I came here and we were very pleased with the staff. They were extremely friendly and made sure that we were satisfied with our entrees. Our food was delicious and will definitely be back. Love the staff at this location.</td>
+      <td>I love this place because it's affordable and has unlimited toppings all for one price! you can switch it up and even do half and half if you like with no extra charges! The pizza is super good and I like that it is thin crust. 10/10 recommend!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>42</th>
-      <td>Of all the build-and-bake pizza restaurants, my family and I have decided Mod is our favorite.  The variety of selections, friendliness of staff, and recommendations are great!</td>
+      <td>Great place to eat pizza and customize your own there! Now w/ the pandemic going on the employees the take safety measures very serious and made changes on silverware and asking for parmesan and red pepper by having to ask for any of these items instead of having those displayed by the drink station.Food wise is good although you can get full pretty easily from getting a MOD size pizza and a drink. Also something fun about their drink station is that you can actually make your own drinks too by mixing two together! I tried making an Arnold Palmer by mixing their sweet tea and lemonade together and it turned out to be one of the best Arnold Palmers I made there! Hopefully I can come back here to eat more pizza eventually! :)</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>43</th>
-      <td>Bailey was amazing and since I knew her in high school, she gave me her free pizza for the night. Thank you so much MOD spring cypress!!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>I've been to Mod many times, but this was my first time at this location. The facility is beautiful and very large. I wish Town Lakes location was this size. Me and my mom went in for a pizza and a salad to-go. They weren't very busy and we were the only people in line when we got there. The girl who made our order was very nice, but did move a little slow. A couple walked in minutes behind us and their pizzas were in the oven before mine. I went and got my drink as my mom paid. She said she saw the girl move my pizza to the oven. My mom got her salad and went ahead and ate it while we waited for my pizza. During this time the girl who made our order walked out the door (I'm guessing to go on break) with a pizza in her hand. We waited for 30 minutes only for the guy to tell me they had lost my pizza. They had absolutely no clue what happened to it, and the girl wasn't there. He offered to make me a new one, but I had to ask for a refund because I didn't have time to wait. I then waited on another guy (who I assume was the manager), who had to process the refund. He gave me back $8 and some chance. I questioned this because I had ordered a mega dough, which is over $9. I was told that my order wasn't even rung up correctly to begin with, when I questioned this and asked the girls name both guys thought this was funny, and laughed and said she was deaf. Why they think that or any of it was funny, I'm not sure. But considering the environment and message MOD tries to send, I didn't find this funny. Facility is nice. But the staff doesn't compare to other locations. This one is a one and done for me.</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>The staff here rocks!! They're always friendly and happy to make my pizza however I ask. And the pizza is delicious!!</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>Love this location! The staff is always very friendly, and the restaurant is always clean. The salads and pizzas are equally delicious and always made to perfection!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>I really like mod Pizza. I get to customize my pizza to my exact liking and they even have anchovies! You can put a ton of different combinations together and see exactly what's the perfect Pizza for you. No matter what your cravings are, you can satisfy them here.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>Fresh ingredients, made-to-order pizza, one price no matter how many toppings, refreshing homemade lemonade, and amazing customer service! These are all of the reasons you should run to MOD Pizza!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>So glad they opened this location. Much bigger than the Towne Lake Store and more inviting. The pizza and service were amazing. We had the special and the Mad Dog. Will be back for sure!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>Sure the food is fine but the Paterson prepping the food was sneezing and coughing and talking about how sick they have been to a coworker...so that's awesome. Threw my food directly in the trash and walked out.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>I wish I could leave multiple 5 star reviews for this place and the staff at this location. They are nothing but friendly, every single time we come in...... and we come in pretty often lol. They are so helpful when making suggestions, and do everything with a smile on their face. The service industry can be such a rough place to be and work, but this location and staff have never disappointed me. Thank you MOD 290 and Spring Cypress for always being ready to give great service, and phenomenal food. Nowhere else I'd rather have pizza! Keep spreading #Modness!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>Cool array of specialty pizzas at reasonable prices. Friendly staff and fast service. What more could you ask for. All the MOD's are consistent; great concept.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>Just the best service every ! So friendly ! Just love to sit and enjoy my food ! The games . Even during covid these guys take precautions. I always feel welcome . Once I even saw the manger take from her own pocket and feed a guy . Countless times I've seen them even accommodate  military and Police officers. Just love them . The food is always fresh !</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>MOD pizza is my favorite fast food place! The options to chose from are amazing and the service it's pretty fast. Unfortunately the staff was rude... The district manager had offered my friend a free pizza and when we went, they were refusing to give my friend the pizza saying that because he wasn't there. We asked for his phone number and they said they didn't have it and to come back whenever he was there. But how would we know when he's there??? Makes no sense! But anyways this MOD pizza is amazing except the staff excluding the blonde girl who served us.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>Fast, fun with nicest staff. Love this location. I got a mini with spicy sausage, mushrooms, olives, onions. Very good!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>This place is awesome!!! The staff is super nice, and really welcoming! The pizza is great as always!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>Good pizza for relatively cheap, but it's nothing to write home about. The pizza crust is a bit thin and almost tastes a bit like cardboard. Fresh ingredients and toppings to choose from and great salad bar. Overall mediocre though.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>The service here is very helpful. They have good ingredients to choose from for your pizza . The only minor flaw is the red sauce. But thankfully the cheese makes up for the sauce.</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>The service here is always great and everyone is friendly.  My son is autistic and non-verbal and they are very patient while he points to his preferred toppings and selects his drink.  They understand his quirks and are always sweet to him.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>This is definitely the best MOD Pizza in the area. The squad is always friendly often greeting regulars by name and the pizza always comes out perfectly crispy without charring the edges like some other locations. If you've never been to MOD Pizza, just know that it's a build your own pizza chain where you can add as many or as few toppings as you'd like.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>Once again, Mod Pizza pulled it off...awesome pizza with excellent service. These guys are the best!! Took my girls out to lunch today and Mod staff did a great job welcoming us, making our custom pizza and even went the extra mile to make sure our food was perfect!!! Great Job Mod, keep up the excellent work!!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>You can never go wrong with MOD Pizza. Food is always outstanding. Shoutout to Janasia and Kyle for their amazing service. Outstanding job!</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>Just meh. All kids working here.Disappointed. Salads were not fresh, actually was not even chilled.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>I love this place! You get pizza just the way you want it, the ingredients are fresh and the service is friendly. We come here weekly and it never disappoints.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>Love the pizza! So fresh and crunch, will be back.  bTW, the salad is wonderful as well, lime mustard dressing (if I remember it right) add more points.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>I came in today and it was a rainy day until there weren't that many people in and I decided to give it a try. I ordered my pizza mini pizza with minimal toppings and I don't know if it was the manager or not but you didn't have a name tag on, she wasn't white lady probably a little older and she was chatting it up with a couple of head of me. I waited my turn in line and when she finally helped me a guy came to relieve her so she went ahead and went on the cashier to check people out. So as you checking me out I asked her about there no name cakes and I said I want one and then she says okay it's charging for it I pay my food and then I go and I sit and I wait for my pizza. Another previous customer that just was before me came back and asked for a couple extra sides and the same lady says oh have you tried our no-name cakes before and the customer said oh I have tried one but I haven't tried the newest one. So she says oh go ahead take one for free and like her a free No Name Pizza when she literally 2 seconds before and made sure that I had the $0.25 that was all my total as I'm rubbing Ginger my purse trying to tell her I have it I just have to dig in for it. When I was checking out she paid me no eye contact and totally was nonchalant but then when she saw the other customers, that was her same race she was over the moon happy and offering free things. Definitely I'm never coming here again horrible customer service and the fact that she charged me for something and then goes and offer it still free to other people I think is bad for business.</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>Love pizza here as I love veggie toppings and herbs. Pick meats and delish! Be careful asking for heavy drizzled, you'll regret it. Highly recommend it.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>There was nothing "super fast" about this location. 40 min wait on a Thursday night for a pizza and another 5 for the forgotten garlic strips.</td>
+      <td>Can I give 0 stars?  If I had known what the inside of the "restaurant" looked like before I ordered I would have turned around and left. Dirty is being too nice.  I had to ask someone to clean a table for us.  He literally wiped everything on to the floor. This was a Tuesday evening before the dinner rush.    Out of 15(est.) tables, All were sitting empty and dirty.   The frozen pizza from the grocery store is better priced and better tasting.   The salad was wilted and obviously had been sitting out all day.We ordered 2 mini pepperoni pizzas, 2 drinks and an order of breadsticks. I'm still pissed I managed to spend 26.00.</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>69</th>
-      <td>This is the second time I've ordered from this establishment and both times either the pizza was terrible or the service was worse.  The first time the pizza was under cooked.  The second time I told them when I ordered that it was to go.  When I paid, I told the well tattooed guy that my order was to go do I would come back to pick it up.  15 minutes later I come back and my pizza is left on the pick up counter, as a eat in order, getting cold.  The guy behind the counter said "I called your name seven times!!"  Needless to say, I will definitely not come back &amp; will not recommend this place to anyone.  Inefficient staff who could care less about the quality of crap they sell much less care about their customers!! This place will not last</td>
+      <td>Several of my family members have a gluten sensitivity, if you're like us then don't go to this location. Go to the Fairfield location. They are excellent when it comes to gluten. This location is good if you don't have any dietary restrictions.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>BURNT!! Just spent $30 on 2 cauliflower pizzas. For $3.30 MORE for each one u 2 can enjoy (NOT) an extra crispy, extra crunchy, "fall on the floor when you bite it" charred pizza. Extremely disappointed.We usually go 2 Towne Lake location but were STARVING! Big mistake coming here. They should have offered 2 replace it when they realized they left it in to long but guess they decided 2 see if we would complain. Yup, I'll complain- where it does the most good...publicly. Not coming to this location anymore. remember, u have Crust Pizza opening ard the area</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>70</th>
-      <td>I love this store, it is the only mod I've been to with arcade machines and the manager also said it was the only store with them currently. My pizza came out fast and perfectly brown, I asked for a light bake and I was not let down. Thank you for another great lunch at MOD pizza.</td>
+      <td>New Year's Day and not only were they open today but the 2 employees working were very personable, friendly and helpful. E will definitely be back to this location again. Plus the restaurant was very clean.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>71</th>
-      <td>Great pizza, I really didn't want pizza today but my friends made me come. It was the best decision I've ever made. Greatest pizza ever. Will be coming back often</td>
+      <td>Avoid this location. Last time we visited shortly after open (about 11:15a), staff had us stand there for 15-20 min while they worked on online orders. We were the only people in line.. food was okay. Yesterday, we also arrived early, very few In restaurant, were helped promptly but--wow, the food prep was awful. Pizzas were the size of small tortillas and when I asked about that was told they are just thick/-um, no. See pic. We' were overcharged and they gave my husband's pizza to another customer (which we didn't discover until the wait had been quite long). We got the $ back for that (and corrected the overcharge) and he did not end up eating.  No offer to comp a pizza &amp; remake.  Outdoor seating was filthy and had clearly not been cleaned since yesterday at best. Retrain &amp; do some quality control here Mod. Everyone else avoid until it improves.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MOD Pizza has become my go to pizza spot every week. You cannot top the idea of customizing your pizza for a standard cost. I usually go with the mod size Which is an 11 inch size pizza with cauliflower crust. I top it off with a lot of cheese and a lot of vegetables, specifically garlic mushrooms and jalapeños. They have a menu with preselected types of pizza But I find customizing my pizza more rewarding. As you can tell from the pictures, the toppings are pretty stacked.Mod pizza also has a reward program where 150 points will give you a free pizza, and you are earn one point by spending one dollar.</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Horrible customer service. Very slow. When we walked in we were not greeted. Someone finally walked up and said, "what would you like". She kept acting as if she couldn't hear us. Once we placed our order she stared whispering to her coworkers and we could tell she was talking about us. Another co-worker was having sidebar with her about empty all the trashes and taking them directly to the dumpster. I'm only writing this review because this is the second time I've had bad service here. I would also like to note that every ingredient was packed on. Even when I asked for light jalapeños. I literally got about 15 jalapeños on a mini. Waste of produce. Needs customer service training and quality control. Never coming back to this location again.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>We LOVE MOD, and we come every Friday!  But, not sure what happened!  We started coming to this one because the Fairfield location closed for awhile.  When we first started coming here it was awesome!  Service was THE best out of any of the MODS in Cypress.  Fast forward to tonight (and last week, and the week before).  These poor kids are being forced to work and they hate it!  They don't speak up, they get pissy if you ask for anything extra and the girl at the register, she only knows how to nod, she apparently can't speak!  So... off to another one next week we go!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>72</th>
-      <td>Kyle was amazing very nice and friendly and enthusiastic! Will definitely be back!! The food was excellent as well and the store very clean.</td>
+      <td>Absolutely horrible service. Couldn't get help and when we finally did the guy was rude. They never called out our names for the pizza when it was ready. Stood for over 5 minutes trying to get the finishing glaze on the pizza I ordered to watch a guy sneeze all on the pizzas in the oven and then grab more food without washing his hands. Absolutely disgusting. I won't be back</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>I love this place because it's affordable and has unlimited toppings all for one price! you can switch it up and even do half and half if you like with no extra charges! The pizza is super good and I like that it is thin crust. 10/10 recommend!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>73</th>
-      <td>Update: came a 2nd time and still love it. Lots of people- because of the spacipus design, didnt feel crowded, just full of energy. Staff very polite, excellent service and manner.</td>
+      <td>Great place to eat pizza and customize your own there! Now w/ the pandemic going on the employees the take safety measures very serious and made changes on silverware and asking for parmesan and red pepper by having to ask for any of these items instead of having those displayed by the drink station.Food wise is good although you can get full pretty easily from getting a MOD size pizza and a drink. Also something fun about their drink station is that you can actually make your own drinks too by mixing two together! I tried making an Arnold Palmer by mixing their sweet tea and lemonade together and it turned out to be one of the best Arnold Palmers I made there! Hopefully I can come back here to eat more pizza eventually! :)</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>74</th>
-      <td>Awesome pizza, great service- new manager couldnt have been more friendly and i love the atmosphere of this one even in comparrison to the barker cypress and fairfield location. Didnt feel as crowded and windows all around.</td>
+      <td>Can I give 0 stars?  If I had known what the inside of the "restaurant" looked like before I ordered I would have turned around and left. Dirty is being too nice.  I had to ask someone to clean a table for us.  He literally wiped everything on to the floor. This was a Tuesday evening before the dinner rush.    Out of 15(est.) tables, All were sitting empty and dirty.   The frozen pizza from the grocery store is better priced and better tasting.   The salad was wilted and obviously had been sitting out all day.We ordered 2 mini pepperoni pizzas, 2 drinks and an order of breadsticks. I'm still pissed I managed to spend 26.00.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Several of my family members have a gluten sensitivity, if you're like us then don't go to this location. Go to the Fairfield location. They are excellent when it comes to gluten. This location is good if you don't have any dietary restrictions.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>75</th>
-      <td>Great pizza,, cooked perfectly with a toasted crust ! Wish  I could do this at home. friendly staff, and a bonus great price!</td>
+      <td>BURNT!! Just spent $30 on 2 cauliflower pizzas. For $3.30 MORE for each one u 2 can enjoy (NOT) an extra crispy, extra crunchy, "fall on the floor when you bite it" charred pizza. Extremely disappointed.We usually go 2 Towne Lake location but were STARVING! Big mistake coming here. They should have offered 2 replace it when they realized they left it in to long but guess they decided 2 see if we would complain. Yup, I'll complain- where it does the most good...publicly. Not coming to this location anymore. remember, u have Crust Pizza opening ard the area</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>New Year's Day and not only were they open today but the 2 employees working were very personable, friendly and helpful. E will definitely be back to this location again. Plus the restaurant was very clean.</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>76</th>
-      <td>This is our favorite MOD pizza location. It spacious inside lots of space and tables. The staff are always pleasant and helpful. The games are free to play.</td>
+      <td>Avoid this location. Last time we visited shortly after open (about 11:15a), staff had us stand there for 15-20 min while they worked on online orders. We were the only people in line.. food was okay. Yesterday, we also arrived early, very few In restaurant, were helped promptly but--wow, the food prep was awful. Pizzas were the size of small tortillas and when I asked about that was told they are just thick/-um, no. See pic. We' were overcharged and they gave my husband's pizza to another customer (which we didn't discover until the wait had been quite long). We got the $ back for that (and corrected the overcharge) and he did not end up eating.  No offer to comp a pizza &amp; remake.  Outdoor seating was filthy and had clearly not been cleaned since yesterday at best. Retrain &amp; do some quality control here Mod. Everyone else avoid until it improves.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MOD Pizza has become my go to pizza spot every week. You cannot top the idea of customizing your pizza for a standard cost. I usually go with the mod size Which is an 11 inch size pizza with cauliflower crust. I top it off with a lot of cheese and a lot of vegetables, specifically garlic mushrooms and jalapeños. They have a menu with preselected types of pizza But I find customizing my pizza more rewarding. As you can tell from the pictures, the toppings are pretty stacked.Mod pizza also has a reward program where 150 points will give you a free pizza, and you are earn one point by spending one dollar.</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Horrible customer service. Very slow. When we walked in we were not greeted. Someone finally walked up and said, "what would you like". She kept acting as if she couldn't hear us. Once we placed our order she stared whispering to her coworkers and we could tell she was talking about us. Another co-worker was having sidebar with her about empty all the trashes and taking them directly to the dumpster. I'm only writing this review because this is the second time I've had bad service here. I would also like to note that every ingredient was packed on. Even when I asked for light jalapeños. I literally got about 15 jalapeños on a mini. Waste of produce. Needs customer service training and quality control. Never coming back to this location again.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>We LOVE MOD, and we come every Friday!  But, not sure what happened!  We started coming to this one because the Fairfield location closed for awhile.  When we first started coming here it was awesome!  Service was THE best out of any of the MODS in Cypress.  Fast forward to tonight (and last week, and the week before).  These poor kids are being forced to work and they hate it!  They don't speak up, they get pissy if you ask for anything extra and the girl at the register, she only knows how to nod, she apparently can't speak!  So... off to another one next week we go!</td>
       <td>5</td>
     </tr>
     <tr>
-      <th>77</th>
-      <td>I come in between work breaks. I come with friends. I come with family. It's good food. Easy going atmosphere. I get through the lines pretty quickly. The staff is always nice! It's a simple solution that fulfills everyone's wants.</td>
-      <td>3</td>
+      <td>Absolutely horrible service. Couldn't get help and when we finally did the guy was rude. They never called out our names for the pizza when it was ready. Stood for over 5 minutes trying to get the finishing glaze on the pizza I ordered to watch a guy sneeze all on the pizzas in the oven and then grab more food without washing his hands. Absolutely disgusting. I won't be back</td>
+      <td>1</td>
     </tr>
     <tr>
-      <th>78</th>
-      <td>I usually love MOD And it's my favorite pizza but this particular location was not up to par. The pizza was uncooked and poorly made. I know the restaurant is brand new so I hope that there just learning.</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>By far the best one I've been to...friendly staff great food..they telling could be toned down it's hard to understand but overall AWESOME LUNCH...</td>
+      <td>I love this place because it's affordable and has unlimited toppings all for one price! you can switch it up and even do half and half if you like with no extra charges! The pizza is super good and I like that it is thin crust. 10/10 recommend!</td>
       <td>5</td>
+    </tr>
+    <tr>
+      <td>Great place to eat pizza and customize your own there! Now w/ the pandemic going on the employees the take safety measures very serious and made changes on silverware and asking for parmesan and red pepper by having to ask for any of these items instead of having those displayed by the drink station.Food wise is good although you can get full pretty easily from getting a MOD size pizza and a drink. Also something fun about their drink station is that you can actually make your own drinks too by mixing two together! I tried making an Arnold Palmer by mixing their sweet tea and lemonade together and it turned out to be one of the best Arnold Palmers I made there! Hopefully I can come back here to eat more pizza eventually! :)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Can I give 0 stars?  If I had known what the inside of the "restaurant" looked like before I ordered I would have turned around and left. Dirty is being too nice.  I had to ask someone to clean a table for us.  He literally wiped everything on to the floor. This was a Tuesday evening before the dinner rush.    Out of 15(est.) tables, All were sitting empty and dirty.   The frozen pizza from the grocery store is better priced and better tasting.   The salad was wilted and obviously had been sitting out all day.We ordered 2 mini pepperoni pizzas, 2 drinks and an order of breadsticks. I'm still pissed I managed to spend 26.00.</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>

@@ -1,0 +1,10 @@
+flask
+numpy
+matplotlib
+seaborn
+transformers
+torch
+pandas
+requests
+bs4
+gunicorn

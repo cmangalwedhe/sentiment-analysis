@@ -2,16 +2,48 @@
 
 <html>
 <head>
-    <title>Yelp Link</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Enter Yelp Link</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-<form action="#" method="POST">
-    <p>Enter a Yelp Link: </p>
-    <p><input type="text" name="link" id="linkInput"/></p>
-    <button type="submit" name="submit_button">Submit</button>
-</form>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home Page</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/get_yelp_link">Enter Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/show_sentiment">Show Comments</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/display_graph">Show Graphs</a>
+    </li>
+</ul>
+
+<div class="alert alert-warning" style="text-align: center;" role="alert">
+    Warning: This will take some time for the page to refresh depending on the amount of reviews on Yelp for your
+    selected business. Please be patient and do not refresh the page. Thank you for your cooperation!
+</div>
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% for category, message in messages %}
+        <div class="alert alert-{{category}}" role="alert" style="text-align: center;">
+            {{message}}
+        </div>
+    {% endfor %}
+{% endwith %}
+
+<div style="text-align: center;">
+    <form method="POST">
+        <p>Enter a Yelp Link: </p>
+        <p><input type="text" name="link" id="linkInput"/></p>
+        <button type="submit" name="submit_button">Submit</button>
+    </form>
+</div>
+
 
 </body>
 </html>

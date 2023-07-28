@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matplotlib Graph in HTML</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home Page</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/get_yelp_link">Enter Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/show_sentiment">Show Comments</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/display_graph">Show Graphs</a>
+    </li>
+</ul>
+
+
+<h1>
+    <div style="text-align: center;">Visual Graphs on Sentiments Collected</div>
+</h1>
+<div style="text-align: center;">
+    <img src="data:image/png;base64,{{ encoded_boxplot }}" alt="Matplotlib Graph">
+    <img src="data:image/png;base64,{{ encoded_histogram }}" alt="Histogram">
+</div>
+
+<h1>
+    <div style="text-align: center;">Summary Statistics</div>
+</h1>
+<div style="text-align: center;">
+    <p>Mean: {{mean}}</p>
+    <p>Median: {{median}}</p>
+    <p>Minimum Rating: {{min}}</p>
+    <p>Maximum Rating: {{max}}</p>
+    <p>Standard Deviation: {{standard_deviation}}</p>
+</div>
+</body>
+</html>

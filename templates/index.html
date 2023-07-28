@@ -2,22 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index Page</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Welcome to my Yelp Sentiment Analysis Project</h1>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="/">Home Page</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/get_yelp_link">Enter Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/show_sentiment">Show Comments</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/display_graph">Show Graphs</a>
+    </li>
+</ul>
+
+<br>
+
+<div style="text-align: center;">
+    <h1>Welcome to my Yelp Sentiment Analysis Website</h1>
     <h2>Created by Chinmay Mangalwedhe</h2>
 
-    <p>This is a project that I made that scrapes Yelp pages and gives a sentiment analysis using the pretrained neural network BERT. After it gives a sentiment to every
-    review on the Yelp page provided by you, it will create a histogram plot and summary statistics of the sentiments collected.
+    <p>This is a website that I made that scrapes Yelp pages and gives a sentiment analysis using the pretrained neural
+        network BERT. After it gives a sentiment to every
+        review on the Yelp page provided by you, it will create a histogram plot and summary statistics of the sentiments
+        collected.
     </p>
 
     <p>Visit this link if you would like to learn more about what BERT is and what it can offer:
-        <a href="https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270">Article by Rani Horev</a></p>
+        <a href="https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270">Article
+            by Rani Horev</a></p>
 
-    <p><strong>As this scrapes Yelp's webpage (to capture all reviews) and gives a sentiment to each rating, this may take a while so please do not leave the webpage.</strong></p>
+    <p><strong>As this scrapes Yelp's webpage (to capture all reviews) and gives a sentiment to each rating, this may take a
+        while so please do not leave the webpage.</strong></p>
     <p>In the future, I plan to expand this and include Google Reviews.</p>
 
-    <p>I hope you enjoy and if you have any suggestions please feel free to email me at <a href="mailto:cmangalwedhe@gmail.com">cmangalwedhe@gmail.com</a></p>
+    <p>I hope you enjoy and if you have any suggestions please feel free to email me at <a
+            href="mailto:cmangalwedhe@gmail.com">cmangalwedhe@gmail.com</a></p>
+</div>
 </body>
 </html>
