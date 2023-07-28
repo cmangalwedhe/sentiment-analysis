@@ -7,4 +7,3 @@ torch
 pandas
 requests
 bs4
-gunicorn
